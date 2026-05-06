@@ -7,10 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
+jspm_packages
+
+# Build outputs
 dist
 dist-ssr
 *.local
+out
+.vercel
+.netlify
+
+# Vite specific (Cleanup for the timestamp files you saw)
+vite.config.ts.timestamp-*
+*.mjs
+*.js.map
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +34,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# OS related
+Thumbs.db
+ehthumbs.db
+Desktop.ini
