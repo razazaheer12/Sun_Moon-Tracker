@@ -2,7 +2,7 @@
 
 [![Live on Vercel](https://img.shields.io/badge/Live-Vercel-000000?style=for-the-badge&logo=vercel)](https://sun-moon-tracker-a27p.vercel.app/)
 
-A beautiful **React + Vite + TypeScript** app that lets you explore the world through **time-zone aware “world time windows”**. Add your favorite cities and instantly see:
+SunMoon Tracker is a high-precision, interactive web application designed to visualize the real-time positions of the sun and the moon. A beautiful **React + Vite + TypeScript** app that lets you explore the world through **time-zone aware “world time windows”**. Add your favorite cities and instantly see:
 
 - the **current local time** in each timezone
 - the **date** in that region
