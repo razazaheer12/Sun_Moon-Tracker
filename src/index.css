@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 95%;
+    --foreground: 20 10% 13%;
+    --muted: 20 5% 85%;
+    --muted-foreground: 20 5% 35%;
+    --border: 20 5% 90%;
+    --input: 20 5% 90%;
+    --ring: 20 5% 80%;
+    --primary: 20 10% 13%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 20 5% 85%;
+    --secondary-foreground: 20 10% 13%;
+    --accent: 20 5% 80%;
+    --accent-foreground: 20 10% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 13%;
+  }
+
+  .dark {
+    --background: 20 10% 8%;
+    --foreground: 0 0% 95%;
+    --muted: 20 10% 15%;
+    --muted-foreground: 20 5% 65%;
+    --border: 20 10% 20%;
+    --input: 20 10% 15%;
+    --ring: 20 5% 30%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 20 10% 8%;
+    --secondary: 20 10% 15%;
+    --secondary-foreground: 0 0% 95%;
+    --accent: 20 10% 20%;
+    --accent-foreground: 0 0% 95%;
+    --card: 20 10% 5%;
+    --card-foreground: 0 0% 95%;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono transition-colors;
+  }
+}
