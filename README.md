@@ -12,6 +12,10 @@ A beautiful **React + Vite + TypeScript** app that lets you explore the world th
 
 ---
 
+## 📸 Preview
+
+<img width="949" height="410" alt="image" src="https://github.com/user-attachments/assets/3058fb26-04f3-436c-a0d3-3cfb732f4fd6" />
+
 ## ✨ Why you’ll love it
 
 - **Fast & responsive**: optimized client-side rendering.
@@ -138,4 +142,24 @@ Contributions are welcome!
 ## 📝 License
 
 MIT (or update with your preferred license if different). 
+
+---
+
+## 👨‍💻 Developer
+
+<p align="center">
+  Made with ❤️ by <strong>Raza Zaheer</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/razazaheer12">
+    <img src="https://img.shields.io/badge/GitHub-razazaheer12-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  ⭐ If you found this project useful, please star it!
+</p>
 
