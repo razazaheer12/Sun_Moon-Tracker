@@ -1,61 +1,99 @@
-# Sun & Moon Tracker (World Time Windows)
+# 🌙☀️ Sun & Moon Tracker — World Time Windows
 
 [![Live on Vercel](https://img.shields.io/badge/Live-Vercel-000000?style=for-the-badge&logo=vercel)](https://sun-moon-tracker-a27p.vercel.app/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-razazaheer12%2FSun_Moon-Tracker-181717?style=for-the-badge&logo=github)](https://github.com/razazaheer12/Sun_Moon-Tracker)
 
-A modern **React + Vite + TypeScript** app that helps you visualize **world time windows** for selected cities (time zone aware), including a **sky-style time background** and an at-a-glance time display.
+A beautiful **React + Vite + TypeScript** app that lets you explore the world through **time-zone aware “world time windows”**. Add your favorite cities and instantly see:
 
-> Built with a clean UI using **Tailwind CSS** and **shadcn/ui-style components**.
-
----
-
-## ✨ Features
-
-- **Search & add locations** (city-based)
-- **Time zone aware live clock** (updates every second)
-- **Sortable cards** (move up/down)
-- **Delete locations**
-- **Theme toggle** (light/dark)
-- **Sky background** that reacts to the selected time (visual day progress)
+- the **current local time** in each timezone
+- the **date** in that region
+- a **sky background** that visually reflects the day progress (sun → moon vibe!)
+- **reorder** and **remove** time cards with ease
+- a **theme toggle** for comfortable viewing
 
 ---
 
-## 🖥️ Live Demo
+## ✨ Why you’ll love it
 
-Check it out here:
-- https://sun-moon-tracker-a27p.vercel.app/
+- **Fast & responsive**: optimized client-side rendering.
+- **Time-zone accurate**: uses timezone-aware calculations for each selected city.
+- **Delightful UI**: sky-style background + clean card layout.
+- **Simple flow**: search → add → compare time → reorder.
 
 ---
 
-## 🚀 Getting Started (Local Development)
+## 📱 Live Demo
+
+Visit: **https://sun-moon-tracker-a27p.vercel.app/**
+
+---
+
+## 🧩 Features (at a glance)
+
+- ✅ Search cities and **add time windows**
+- ✅ Live clock updates (every second)
+- ✅ **Move cards up/down** to prioritize your cities
+- ✅ Delete cards
+- ✅ Light/Dark **theme toggle**
+- ✅ Sky background reacting to time (day progress)
+
+---
+
+## 🏗️ Project Structure
+
+> (High-level map of the current codebase)
+
+```text
+sunmoon-tracker/
+├─ public/
+│  ├─ favicon.ico
+│  └─ placeholder.svg
+├─ src/
+│  ├─ components/
+│  │  ├─ TimeZoneCard.tsx
+│  │  ├─ TimeZoneSearch.tsx
+│  │  └─ (UI components: ThemeToggle, SkyBackground, etc.)
+│  ├─ data/
+│  │  └─ timezones.ts          # city → timezone suggestions
+│  ├─ utils/
+│  │  └─ timeUtils.ts         # timezone + day progress helpers
+│  ├─ pages/
+│  │  └─ Index.tsx            # main page UI
+│  └─ (other config & styles)
+├─ package.json
+├─ vite.config.ts
+└─ tailwind.config.ts
+```
+
+---
+
+## 🚀 Getting Started (Local)
 
 ### 1) Requirements
 
-- Node.js (LTS recommended)
-- npm
+- **Node.js** (LTS recommended)
+- **npm**
 
 ### 2) Install dependencies
-
-From the project directory:
 
 ```bash
 cd "d:/Code Playground/sunmoon-tracker/sunmoon-tracker"
 npm i --legacy-peer-deps
 ```
 
-> Note: This repo had a peer-dependency conflict during install. `--legacy-peer-deps` resolves it.
+> Note: This repo may show a peer-dependency conflict during installation. `--legacy-peer-deps` resolves it.
 
-### 3) Run in development mode (with auto-reload)
+### 3) Run in development mode (auto reload)
 
 ```bash
 npx nodemon --exec 'npm run dev'
 ```
 
-Then open the URL shown in the terminal (Vite dev server).
+Then open the local Vite URL shown in the terminal.
 
 ---
 
-## 🧱 Build for Production
+## 🧱 Production Build
 
 ```bash
 npm run build
@@ -63,48 +101,42 @@ npm run build
 
 ---
 
-## 📦 Project Stack
+## 🌍 Deployment (Vercel)
 
-- **Vite**
-- **React**
-- **TypeScript**
-- **Tailwind CSS**
-- **Radix UI** (component primitives)
-- **date-fns** (date/time utilities)
+This project is a static Vite React app and typically does not require runtime environment variables.
 
----
+### Recommended Vercel settings
 
-## 🌐 Deployment (Vercel)
+- **Framework preset:** Vite
+- **Build command:** `npm run build`
 
-### What to configure
+If Vercel ever reports missing environment variables in your build logs, add them here:
 
-This app does not require custom environment variables for runtime because it uses only local/browser time and built-in data.
+**Vercel → Project → Settings → Environment Variables**
 
-### Typical Vercel setup
-
-- Framework preset: **Vite**
-- Build command:
-  - `npm run build`
-- Output directory:
-  - `dist`
-
-If you do get an env-var error from Vercel, it will show the missing variable name(s) in the build logs—add them to **Vercel → Settings → Environment Variables** as needed.
+> For Vite apps, environment variables meant for client code generally need the `VITE_` prefix.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome!
 
 1. Fork the repo
-2. Create a feature branch
+2. Create your feature branch
 3. Commit your changes
-4. Open a Pull Request
+4. Push and open a PR
 
 ---
 
-## 🛡️ License
+## 📌 Credits
 
-MIT (or your preferred license—update if the repo has a specific license file).
+- Sky-time concept + UI components inspired by modern shadcn-style patterns.
+- City suggestions stored in `src/data/timezones.ts`.
 
+---
+
+## 📝 License
+
+MIT (or update with your preferred license if different). 
 
