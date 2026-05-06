@@ -1,7 +1,6 @@
 # 🌙☀️ Sun & Moon Tracker — World Time Windows
 
 [![Live on Vercel](https://img.shields.io/badge/Live-Vercel-000000?style=for-the-badge&logo=vercel)](https://sun-moon-tracker-a27p.vercel.app/)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-razazaheer12%2FSun_Moon-Tracker-181717?style=for-the-badge&logo=github)](https://github.com/razazaheer12/Sun_Moon-Tracker)
 
 A beautiful **React + Vite + TypeScript** app that lets you explore the world through **time-zone aware “world time windows”**. Add your favorite cities and instantly see:
 
